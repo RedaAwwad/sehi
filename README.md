@@ -11,5 +11,3 @@ A Restaurant Website Template Design
 - Google Fonts
 
 **To See The Website Preview Go to** [Sehi](https://sehi.netlify.com)
-
-**This a test**
