@@ -1,4 +1,4 @@
-#sehi
+# sehi
 A Restaurant Website Template Design
 
 **The Used Languages and libraries:**
@@ -8,5 +8,6 @@ A Restaurant Website Template Design
 - Jquery
 - Font Awesome
 - WOW.js
+- Google Fonts
 
 **To See The Website Preview Go to** [Sehi](https://sehi.netlify.com)
