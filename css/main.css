@@ -1,0 +1,399 @@
+                            /**** Main and Common Style ****/
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*** Sections Heading **/
+.story-head i,
+.our-events-header i,
+.menu-header i,
+.reservation-header i {color: #e3ac03}
+
+.story-head h2,
+.our-events-header h2,
+.menu-header h2,
+.reservation-header h2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translateX(-50%);
+    color: #fff;
+    letter-spacing: .05em;
+}
+
+@media (max-width: 991px) {
+    .story-head h2,
+    .menu-header h2,
+    .our-events-header h2,
+    .reservation-header h2 {width: 50%;}
+}
+
+@media (max-width: 550px) {
+    .story-head h2,
+    .menu-header h2,
+    .our-events-header h2,
+    .reservation-header h2 {width: 80%;}
+}
+
+.story-head h2::after,
+.menu-header h2::after,
+.our-events h2::after,
+.reservation-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #e3ac03;
+}
+                                /************** Main Header ****************/
+                                /***************************************/
+header {
+    height: 100vh;
+    background: url("../images/smoked-chicken.gif") center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+    header {height: 130%;}
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+                            /************** Navigation Bar ****************/
+                            /*********************************************/
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+nav .navbar-brand {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.navbar-brand span {background-color: #fff}
+
+.navbar-brand span,
+.navbar-brand i {color: #e3ac03}
+
+.navbar-nav .nav-item a {position: relative;}
+
+nav .navbar-nav .nav-item a,
+nav .navbar-brand a {
+    color: #fff !important;
+    font-size: 1.1rem;
+}
+
+nav .navbar-nav .nav-item a {
+    padding: 5px !important;
+    text-transform: uppercase;
+}
+
+nav .navbar-nav .nav-item.active a::after,
+nav .navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+nav .navbar-nav .nav-item.active a::after,
+nav .navbar-nav .nav-item:hover ::after {
+    width: 80%;
+    margin-left: 10%
+}
+
+nav .navbar-nav .nav-item a:hover,
+nav .navbar-nav .active a {color: #e3ac03 !important;}
+
+@media (max-width: 767px) {
+    nav .navbar-nav {padding-top: 20px}
+    nav .navbar-nav .nav-item a {text-align: center}
+    nav .navbar-nav .nav-item.active a::after,
+    nav .navbar-nav .nav-item:hover ::after {width: 0;}
+}
+
+.navbar .navbar-toggler {outline: none;}
+
+.navbar .navbar-toggler-icon {position: relative;}
+
+.navbar .navbar-toggler-icon,
+.navbar .navbar-toggler-icon::before,
+.navbar .navbar-toggler-icon::after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: #e3ac03;
+}
+
+.navbar .navbar-toggler-icon::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+.navbar .navbar-toggler-icon::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+} 
+
+                            /***************** Header Content **************/
+                            /**********************************************/
+.header-content {
+    position: relative;
+    margin-top: 15vh;
+    z-index: 3;
+}
+
+@media (max-width: 767.98px) {.header-content {margin-top: 10vh}}
+
+.header-content p{
+    width: 70%;
+    margin: auto;
+    line-height: 1.7rem;
+    padding-bottom: 20px
+}
+
+.main-Btn {width: 100%;}
+
+.main-Btn a {
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+                                    /* Main Dishes */
+.main-dishes {
+    position: relative;
+    width: 100%;
+    z-index: 3 ;
+}
+
+.main-dishes .dish img{max-width: 100%;}
+
+                                    /* Intro Video */
+.intro {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-body {
+    position: relative;
+    background-color: #fff;
+    z-index: 666;
+}
+
+@media (max-width: 767.98px) {.intro-body {margin: auto;margin-top: -80px}}
+
+.intro-body .meal {margin-top: 13vh}
+
+.intro-body .meal img {max-width: 100%}
+
+.intro-body .content{
+    overflow: hidden;
+    margin-top: 30vh;
+    width: 10%;
+    color: #8b8e94
+}
+
+.intro-body .content img {
+    max-width: 20vh;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #e3ac03;
+    cursor: pointer;
+    opacity: 0.8
+}
+
+@media (max-width: 767.98px) {.intro-body .content {margin-top: 0;padding-bottom: 50px}}
+
+.intro-body .content img:hover {
+    opacity: 1;
+    animation: rotatevideo 1s 1 linear
+}
+
+@keyframes rotatevideo {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}/* End Intro */
+
+                                    /* Start Video Overlay */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999999;
+    display: none;
+}
+
+.video-overlay .close {
+    position: absolute;
+    top: 45%;
+    right: 4%;
+    color: #e3ac03;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+.video-overlay .close:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.video-overlay .video {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 5vh
+}
+
+@media (max-width: 767.98px) {
+    .video-overlay .close  {top: 10%;right: 4%}
+    .video-overlay .video {margin-top: 25vh}
+}
+
+.video-overlay .video video {
+    max-width: 100%;
+    padding: 5px;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}/* End Video Overlay */
+
+                        /***************** Our Story Section ***********/
+                        /**********************************************/
+.our-story {
+    padding: 105px 0;
+}
+
+.story-head {
+    height: 70vh;
+    background: url("../images/hero-images/hero_4.jpg") center fixed;
+    background-size: cover
+}
+
+.our-story .story-header img {width: 100%;}
+
+.our-story p {
+    color: #8b8e94;
+    font-size: 16px;
+}
+                            /******************* Menu Section ****************/
+                            /************************************************/
+.menu .menu-header {
+    height: 70vh;
+    background: url("/images/hero-images/hero_1.jpg") center fixed;
+    background-size: cover;
+}                            
+
+.menu .card {border: none !important;padding-top: 25px}
+
+.menu .card img {width: 80%}
+
+.menu h5 {color: #8b8e94;font-size: 16px;}
+                            /******************* Our Events ****************/
+                            /***********************************************/
+.our-events {
+    padding: 105px 0;
+}
+
+.our-events .our-events-header {
+    background: url("../images/hero-images/hero_3.jpg") center fixed;
+    background-size: cover;
+    height: 70vh;
+}
+
+.our-events-header h2 {position: relative;}
+
+.our-events .card {border: none}
+
+.our-events .card-text {
+    color: #8b8e94;
+    font-size: 16px;
+}
+
+.our-events .card-title,
+.our-events .card-link {color: #e3ac03;}
+
+.our-events .card-link:hover {color: #fec847;}
+                            /************* Reservation Section *************/
+                            /**********************************************/
+.reservation {
+    padding: 0 0 105px;
+    color: #8b8e94;
+    font-size: 16px;
+}
+
+.reservation .reservation-header {
+    height: 70vh;
+    background: url("/images/hero-images/hero_2.jpg") center fixed;
+    background-size: cover;
+}
+
+.reservation input,
+.reservation select {
+    border: 1px solid #e3ac03;
+}
+
+.reservation input:focus,
+.reservation select:focus {
+    border: none;
+    outline: none;
+}/* End Reservation  */
+                                /************* Footer *************/
+                                /**********************************/
+footer .footer {padding: 30px 0 0 10px}
+
+footer .footer i {color: #e3ac03}
+
+footer .footer>div {margin-bottom: 15px}
+
+footer .footer span {cursor: pointer}
+
+footer .copy {border-top: 1px solid #ddd}
+
+footer .copy p {margin: 0;padding: 15px}
+
+                                /* Back To Top */
+.back {
+    position: fixed;
+    right: 10px;
+    bottom: -1px;
+    width: 50px;
+    z-index: 99999;
+    cursor: pointer;
+    display: none;
+}
+
+.back img {width: 100%}
